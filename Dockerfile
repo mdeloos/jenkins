@@ -1,3 +1,3 @@
-FROM ubuntu:14.04
-RUN apt-get update
-RUN apt-get install -y jenkins
+FROM registry.access.redhat.com/rhel7/rhel
+RUN yum -y install jenkins
+RUN systemctl start jenkins
